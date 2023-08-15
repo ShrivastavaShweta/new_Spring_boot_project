@@ -29,10 +29,10 @@ public class SessionsController {
         return sessionRepository.getOne(id);
     }
 
-    @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
-    public Session create(@RequestBody final Session session){
-        return sessionRepository.saveAndFlush(session);
-    }
+//    @PostMapping
+//    @ResponseStatus(HttpStatus.CREATED)
+//    public Session create(@RequestBody final Session session){
+//        return sessionRepository.saveAndFlush(session);
+//    }
 
 }
