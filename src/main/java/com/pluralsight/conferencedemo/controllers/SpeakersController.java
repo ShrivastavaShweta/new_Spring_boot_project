@@ -22,7 +22,7 @@ public class SpeakersController {
     }
 
     @GetMapping
-    @RequestMapping({"id"})
+    @RequestMapping("{id}")
     public Speaker get(@PathVariable Long id){
         return speakerRepository.getOne(id);
     }
